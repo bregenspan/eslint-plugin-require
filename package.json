@@ -1,0 +1,37 @@
+{
+  "name": "eslint-plugin-require",
+  "version": "0.0.1",
+  "author": "Ben Regenspan <bregenspan@gmail.com>",
+  "description": "ESLint rules for enforcing specified uses of RequireJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run-script lint && mocha tests/lib/rules/",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bregenspan/eslint-plugin-require"
+  },
+  "homepage": "https://github.com/bregenspan/eslint-plugin-require",
+  "bugs": "https://github.com/bregenspan/eslint-plugin-require/issues/",
+  "devDependencies": {
+    "eslint-tester": "0.3.0",
+    "eslint": ">=0.8.0",
+    "mocha": "~1.13.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "require",
+    "requirejs",
+    "AMD",
+    "lint"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
