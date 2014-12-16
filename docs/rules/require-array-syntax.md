@@ -4,9 +4,9 @@
 
 `require()` has several different call signatures in RequireJS, a couple of which are quite similar in usage and easy to get confused by:
 
-#1 `require(['moduleName', ...], function cb(module) {}` - asynchronously load a module and pass it to `cb()`
-#2 `require('moduleName')` - immediately returns the specified module if it was already loaded; otherwise returns
-#3 `require('moduleName')` (inside a <a href="http://requirejs.org/docs/api.html#cjsmodule">Simplified CommonJS Wrapper</a>) - this behaves a lot like #1, but it's arguably a pretty strange attempt to make CommonJS work on the clientside, and CommonJS really wasn't made to work on the clientside. For our purposes here, let's ignore that this option exists.
+1. `require(['moduleName', ...], function cb(module) {}` - asynchronously load a module and pass it to `cb()`
+2. `require('moduleName')` - immediately returns the specified module if it was already loaded; otherwise returns
+3. `require('moduleName')` (inside a <a href="http://requirejs.org/docs/api.html#cjsmodule">Simplified CommonJS Wrapper</a>) - this behaves a lot like #1, but it's arguably a pretty strange attempt to make CommonJS work on the clientside, and CommonJS really wasn't made to work on the clientside. For our purposes here, let's ignore that this option exists.
 
 It's especially easy to confuse #1 and #2 with eachother and the result can be brittle code that breaks unexpectedly and is then hard to trace as the source of the issue. Consider an unconventional wildlife park's inventory management app consisting of the files:
 
