@@ -2,7 +2,7 @@
 
 # eslint-plugin-require
 
-ESLint rules for enforcing specified patterns of use of <a href="http://requirejs.org/">RequireJS</a> and compatible AMD module loaders.
+<a href="http://eslint.org/">ESLint</a> rules for enforcing specified patterns of use of <a href="http://requirejs.org/">RequireJS</a> and compatible AMD module loaders.
 
 ## Why Use It
 
@@ -21,4 +21,5 @@ Documentation for each rule can be found in [docs/rules](docs/rules).
 
 ## Further Reading
 
-* http://requirejs.org/ (NOTE: this project is not affiliated with RequireJS)
+* http://eslint.org/ 
+* http://requirejs.org/
