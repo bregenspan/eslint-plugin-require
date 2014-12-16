@@ -56,7 +56,7 @@ require('Albertosaurus', function (Albertosaurus) {
 
 And all of a sudden, even though we changed nothing in ContainmentPen.js or its stated dependencies, `Pen.WEIGHT_BEARING_CAPACITY` is not getting set to a multiple of the maximum weight of the Albertosaurus, but we don't notice this right away because we haven't written any tests. The way we find out is that someone uses the inventory management app to order an insufficiently-strong containment pen and our prize Allosaurus escapes and wreaks havoc on the park and its visitors.
 
-How did this happen? Well, we've done a lot of dumb things here, but the immediate issue at hand (the left hand; the other is deep inside a ressurected Late Cretaceous lizard) is that we used the `require('moduleName')` syntax, which made things appear as if we were specifying a dependency to load, when we were in fact pulling in that dependency only if it was already loaded. We had an implicit dependency and paid the price.
+How did this happen? Well, we've done a lot of dumb things here, but the immediate issue at hand (the left hand; the other is deep inside a resurrected Late Cretaceous lizard) is that we used the `require('moduleName')` syntax, which made things appear as if we were specifying a dependency to load, when we were in fact pulling in that dependency only if it was already loaded. We had an implicit dependency and paid the price.
 
 To ensure that our dependencies are explicitly stated in future and that something like this never happens again, next time we can use ESLint and the `require-array-syntax` rule.
 
